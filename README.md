@@ -19,7 +19,7 @@ text = "Escucha la voz humana que imito "
 # Selecciona el  tipos de voz "ultra_fast", "fast" (default), "standard", "high_quality"
 preset = "high_quality"
 
-#Ejecuta 
+# Ejecuta 
 voice_samples, conditioning_latents = load_voice(CUSTOM_VOICE_NAME)
 gen = tts.tts_with_preset(text, voice_samples=voice_samples, conditioning_latents=conditioning_latents,
                           preset=preset)
